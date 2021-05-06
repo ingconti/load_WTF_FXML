@@ -44,6 +44,7 @@ public class App extends Application {
     }
 
 
+
     static void LoadWTFOnTimer() {
         TimerTask task = new TimerTask() {
 
