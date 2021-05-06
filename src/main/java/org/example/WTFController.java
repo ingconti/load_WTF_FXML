@@ -6,7 +6,7 @@ import javafx.fxml.FXML;
 public class WTFController {
 
     @FXML
-    private void switchToSecondary() throws IOException {
+    private void switchToPrimary() throws IOException {
         App.setRoot("secondary");
     }
 }
