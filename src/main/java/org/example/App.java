@@ -12,14 +12,9 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
-/**
- * JavaFX App
- */
-
 /*
 *
-* comers form JAVA non modular using FXML
-*
+* comes form JAVA non modular using FXML
 * added other methods to call from timer
 *
 * */
