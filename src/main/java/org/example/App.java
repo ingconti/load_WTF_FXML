@@ -44,6 +44,7 @@ public class App extends Application {
     }
 
 
+
     static void LoadWTFOnTimer() {
         TimerTask task = new TimerTask() {
 
@@ -61,8 +62,8 @@ public class App extends Application {
             }
         };
 
-        Timer timer = new Timer("Timer");
 
+        Timer timer = new Timer("Timer");
         long delay = 3000L;
         timer.schedule(task, delay);
     }
