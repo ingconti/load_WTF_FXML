@@ -5,19 +5,27 @@ import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+
+import javafx.scene.control.Label;
+
+
 import java.io.IOException;
-import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
+
+
 
 /*
 *
 * comes form JAVA non modular using FXML
 * added other methods to call from timer
 *
-* */
+*/
+
+
 public class App extends Application {
 
     private static Scene scene;
@@ -25,6 +33,9 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("primary"));
+
+        addLabelByCode();
+
         stage.setScene(scene);
         stage.show();
     }
@@ -39,6 +50,13 @@ public class App extends Application {
     }
 
 
+    private void addLabelByCode(){
+        // manually add label:
+        Label label = new Label("Ing SW 2021");
+        VBox root = (VBox) scene.getRoot();
+        root.getChildren().add(label);
+
+    }
 
     static void LoadWTFOnTimer() {
         TimerTask task = new TimerTask() {
