@@ -13,6 +13,7 @@ import javafx.scene.control.Label;
 
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -49,7 +50,10 @@ public class App extends Application {
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
+        //was:FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
+        URL url = App.class.getResource(fxml + ".fxml");
+        // eventually check for NON NULL url. (check path/name/folder/package.
+        FXMLLoader fxmlLoader = new FXMLLoader(url);
         return fxmlLoader.load();
     }
 
