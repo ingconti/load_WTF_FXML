@@ -37,6 +37,10 @@ public class App extends Application {
         addLabelByCode();
 
         stage.setScene(scene);
+
+        // if needed... full screen zoom.
+        // stage.setMaximized(true);
+
         stage.show();
     }
 
