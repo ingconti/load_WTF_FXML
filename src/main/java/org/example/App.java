@@ -76,8 +76,8 @@ public class App extends Application {
                         System.out.println("loading..");
                         setRoot("wtf");
 
-                    } catch (Exception  ex) {
-                        System.out.println(ex);
+                    } catch (Exception  e) {
+                        System.out.println(e);
                     }
                 });
             }
