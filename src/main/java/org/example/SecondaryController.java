@@ -21,9 +21,8 @@ public class SecondaryController {
 
 
     @FXML
-    private void loadStraberry() throws IOException {
+    private void loadStraberry()  {
         Image img = new Image("strawberry.png");
-
         this.imageView.setImage(img);
     }
 
