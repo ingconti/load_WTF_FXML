@@ -80,7 +80,7 @@ public class App extends Application {
                         setRoot("wtf");
 
                     } catch (Exception  e) {
-                        System.out.println(e);
+                        //System.out.println(e);
                     }
                 });
             }
