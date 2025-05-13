@@ -42,17 +42,20 @@ public class App extends Application {
         // if needed... full screen zoom.
         // stage.setMaximized(true);
 
+        stage.setHeight(500);
+        stage.setWidth(500);
+
         stage.show();
     }
 
     static void setRoot(String fxml) throws IOException {
+
         scene.setRoot(loadFXML(fxml));
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
-        //was:FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
         URL url = App.class.getResource(fxml + ".fxml");
-        // eventually check for NON NULL url. (check path/name/folder/package.
+        // eventually check for NON NULL url. (check path/name/folder/package)
         FXMLLoader fxmlLoader = new FXMLLoader(url);
         return fxmlLoader.load();
     }
@@ -60,13 +63,13 @@ public class App extends Application {
 
     private void addLabelByCode(){
         // manually add label:
-        Label label = new Label("Ing SW 2021");
+        Label label = new Label("Ing SW 2025");
         VBox root = (VBox) scene.getRoot();
         root.getChildren().add(label);
 
     }
 
-    static void LoadWTFOnTimer() {
+    static void loadWTFOnTimer() {
         TimerTask task = new TimerTask() {
 
             public void run() {
@@ -91,8 +94,7 @@ public class App extends Application {
 
 
     public static void main(String[] args) {
-
-        LoadWTFOnTimer();
+        loadWTFOnTimer();
         launch();
     }
 

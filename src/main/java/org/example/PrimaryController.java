@@ -8,12 +8,6 @@ public class PrimaryController {
 
     @FXML
     private void switchToSecondary() throws IOException {
-
-        // eventually load  image, too:
-        Image img =
-                new Image("full_0000s_0000_god_and_hero_cards_0056_scylla.png");
-
-
-        App.setRoot("AAA/secondary");
+        App.setRoot("secondary");
     }
 }
