@@ -16,12 +16,10 @@
       -fx-border-color: blue;
    </style>
 
-   <children>
-      <Label text="We do load FXML" />
-      <Label text="from a Timer !!!" />
-      <Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSecondary"/>
+   <Label text="We do load FXML" />
+   <Label text="from a Timer !!!" />
+   <Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSecondary"/>
 
-   </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
