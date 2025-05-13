@@ -11,8 +11,12 @@ public class SecondaryController {
     private ImageView imageView;
 
     @FXML
-    private void switchToPrimary() throws IOException {
-        App.setRoot("primary");
+    private void switchToPrimary()  {
+        try {
+            App.setRoot("primary");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 
